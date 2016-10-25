@@ -25,16 +25,16 @@ public class AClassObserverPattern {
         Robot r3 = new Robot(new Point(0,394), RobotVoiceType.RYAN);
         Robot r4 = new Robot(new Point(17,655), RobotVoiceType.BOB);
         
-        GameMap gm = new GameMap();
+        GameMap gameMap = new GameMap();
         
-        gm.addRobot(r1);
-        gm.addRobot(r2);
-        gm.addRobot(r3);
-        gm.addRobot(r4);
+        gameMap.addRobot(r1);
+        gameMap.addRobot(r2);
+        gameMap.addRobot(r3);
+        gameMap.addRobot(r4);
+        System.out.println("Hej");
+        gameMap.notifyObservers("Alle med blå armbånd skal op nu!");
         
-        gm.notifyObservers("Alle med blå armbånd skal op nu!");
-        
-        gm.killRobot(r2);
+        gameMap.killRobot(r2);
         
         System.out.println(r3);
         
