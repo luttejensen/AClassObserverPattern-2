@@ -1,0 +1,1 @@
+# AClassObserverPattern-2
